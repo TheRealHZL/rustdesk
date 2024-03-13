@@ -55,8 +55,8 @@ pub fn get_custom_server_from_string(s: &str) -> ResultType<CustomServer> {
     if s.contains("host=") {
         let stripped = &s[s.find("host=").unwrap_or(0)..s.len()];
         let strs: Vec<&str> = stripped.split(",").collect();
-        let mut host = "176.9.37.163";
-        let mut key = "SiyqLIAfEqkwLcmS7rrWgGQWH4VfcJUD2NpDtudm2w8=";
+        let mut host = "";
+        let mut key = "";
         let mut api = "";
         let mut relay = "";
         let strs_iter = strs.iter();
